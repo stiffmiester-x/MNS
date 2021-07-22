@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  margin:0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.footer{
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+}
+
+.axioscontainer {
+  display: grid;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.axioscontainer > div {
+  background-color: #f1f1f1;
+  margin: 1rem;
+  padding:0 0.5rem;
+  font-size: 1em;
+  width:100%;
+  box-shadow:0.5rem 0.5rem rgba(12, 1, 2, 0.952);
+  cursor: pointer;
+
+}
+.div_image{
+
+  float: left;
+  width: 40%;
+}
+.logo{
+  
+  margin-top: 1em;
+  min-width: fit-content;
+}
+
+.card{
+  width: 18rem;
+}
+
+
+
+/********** Medium devices only **********/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .axioscontainer >div{
+    justify-content: center;
+    width: 100%;
+  }
+} 
+
+/********** Small devices only **********/
+ @media (min-width: 768px) and (max-width: 991px) { 
+  .axioscontainer >div{
+    justify-content: center;
+    width: 100%;
+    
+  }
+  
+}
+
+/********** Extra small devices only **********/
+ @media (max-width: 767px) {
+  .axioscontainer >div{
+    justify-content: center;
+    width: 100%;
+  }
+  .axioscontainer{
+    padding-right: 50px;
+  }
+  }  
